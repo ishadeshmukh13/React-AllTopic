@@ -5,7 +5,7 @@ const Todo = ({ filterData }) => {
   const TodoList = filterData.map((item) => {
     return <p key={item.id}>{item.title}</p>;
   });
-  return <div>{TodoList}</div>;
+  return <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center"}}>{TodoList}</div>;
 };
 
 // Use an object with 'entity' and 'Cmp' properties when using HocComponent

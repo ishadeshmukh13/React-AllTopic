@@ -31,14 +31,14 @@ const HocComponent = ({ entity, Cmp }) => {
         }
       });
       return (
-        <>
+        <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center"}}>
           <input
             onChange={(e) => {
               this.setState({ ...this.state, term: e.target.value });
             }}
           />
           <Cmp filterData={filterData} />
-        </>
+        </div>
       );
     }
   }

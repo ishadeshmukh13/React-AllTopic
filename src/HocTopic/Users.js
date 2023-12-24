@@ -5,7 +5,7 @@ const Users = ({ filterData }) => {
   const UsersList = filterData.map((item) => {
     return <p>{item.name}</p>;
   });
-  return <div>{UsersList}</div>;
+  return <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center"}}>{UsersList}</div>;
 };
 
 const SearchUser=HocComponent({ entity: "users", Cmp: Users })
