@@ -31,7 +31,7 @@ const HocComponent = ({ entity, Cmp }) => {
       });
       return (
         <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",marginTop:"20px"}}>
-          <input style={{height:"30px",width:"50%",paddingInline:"20px"}}
+          <input style={{height:"30px",width:"50%",paddingInline:"20px",fontStyle:"italic"}}
             onChange={(e) => {
               this.setState({ ...this.state, term: e.target.value.toLowerCase() });
             }}
