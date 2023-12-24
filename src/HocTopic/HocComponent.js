@@ -30,7 +30,7 @@ const HocComponent = ({ entity, Cmp }) => {
         }
       });
       return (
-        <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center"}}>
+        <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",marginTop:"20px"}}>
           <input
             onChange={(e) => {
               this.setState({ ...this.state, term: e.target.value });
