@@ -10,6 +10,8 @@ import UseReducer from './Hooks/UseReducer';
 import UseImprativeHandle from './Hooks/UseImprativeHandle';
 import UseLayoutEffect from './Hooks/UseLayoutEffect';
 import UseDebugValue from './Hooks/UseDebugValue';
+import SearchTodo from './HocTopic/Todo';
+import SearchUser from './HocTopic/Users';
 function App() {
   return (
    <>
@@ -26,6 +28,8 @@ function App() {
     <UseImprativeHandle/>
     <UseLayoutEffect/>
     <UseDebugValue/>
+    <SearchTodo/>
+    <SearchUser/>
    </>
   );
 }
