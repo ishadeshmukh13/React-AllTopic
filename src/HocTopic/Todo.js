@@ -8,5 +8,6 @@ const Todo = ({ filterData }) => {
   return <div>{TodoList}</div>;
 };
 
+// Use an object with 'entity' and 'Cmp' properties when using HocComponent
 const SearchTodo = HocComponent({ entity: "todos", Cmp: Todo });
 export default SearchTodo;

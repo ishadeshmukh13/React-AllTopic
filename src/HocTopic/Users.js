@@ -8,5 +8,5 @@ const Users = ({ filterData }) => {
   return <div>{UsersList}</div>;
 };
 
-const SearchUser=HocComponent("users",Users)
+const SearchUser=HocComponent({ entity: "users", Cmp: Users })
 export default SearchUser;

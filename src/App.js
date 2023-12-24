@@ -12,6 +12,7 @@ import UseLayoutEffect from './Hooks/UseLayoutEffect';
 import UseDebugValue from './Hooks/UseDebugValue';
 import SearchTodo from './HocTopic/Todo';
 import SearchUser from './HocTopic/Users';
+import Promises from './promises';
 function App() {
   return (
    <>
@@ -30,6 +31,7 @@ function App() {
     <UseDebugValue/>
     <SearchTodo/>
     <SearchUser/>
+    <Promises/>
    </>
   );
 }

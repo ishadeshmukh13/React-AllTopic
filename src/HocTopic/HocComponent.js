@@ -1,6 +1,8 @@
-import React, {Component } from "react";
+import React, { Component } from "react";
+
 const HocComponent = ({ entity, Cmp }) => {
-  return class extends Component {
+  // Give your inner class a name
+  class WrappedComponent extends Component {
     state = {
       data: [],
       term: "",
@@ -39,7 +41,9 @@ const HocComponent = ({ entity, Cmp }) => {
         </>
       );
     }
-  };
+  }
+
+  return WrappedComponent;
 };
 
 export default HocComponent;
