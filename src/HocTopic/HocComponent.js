@@ -23,17 +23,17 @@ const HocComponent = ({ entity, Cmp }) => {
       const filterData = data.slice(0, 10).filter((d) => {
         if (entity === "users") {
           const { name } = d;
-          return name.indexOf(term) >= 0;
+          return name.toLowerCase().indexOf(term) >= 0;
         } else if (entity === "todos") {
           const { title } = d;
-          return title.indexOf(term) >= 0;
+          return title.toLowerCase().indexOf(term) >= 0;
         }
       });
       return (
         <div style={{display:"flex",justifyContent:"center",flexDirection:"column",alignItems:"center",marginTop:"20px"}}>
-          <input
+          <input style={{height:"30px",width:"50%",paddingInline:"20px"}}
             onChange={(e) => {
-              this.setState({ ...this.state, term: e.target.value });
+              this.setState({ ...this.state, term: e.target.value.toLowerCase() });
             }}
           />
           <Cmp filterData={filterData} />

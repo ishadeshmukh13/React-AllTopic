@@ -15,8 +15,8 @@ import SearchUser from './HocTopic/Users';
 import Promises from './promises';
 function App() {
   return (
-   <>
-   <ShareContext>
+   <div style={{ fontStyle: "italic"}}>
+   <ShareContext >
     <CheckContext/>
    </ShareContext>
     <UseState/>
@@ -32,7 +32,7 @@ function App() {
     <SearchTodo/>
     <SearchUser/>
     <Promises/>
-   </>
+   </div>
   );
 }
 

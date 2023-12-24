@@ -146,7 +146,7 @@ const Promises = () => {
     }
   };
   promise8()
-  return <div>promises</div>;
+  return <div></div>;
 };
 
 export default Promises;
