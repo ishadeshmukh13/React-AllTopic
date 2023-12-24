@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 const HocComponent = ({ entity, Cmp }) => {
   // Give your inner class a name
   class WrappedComponent extends Component {
